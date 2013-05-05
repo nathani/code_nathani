@@ -12,9 +12,10 @@ ostream_iterator<string> oo(cout);
 istream_iterator<string> eos;
 int main()
 {
-    **oo = "Some string  ..\n";
+    *oo = "Some string  ..\n";
 istream_iterator<string> ii(cin);
-    string s1;
+        cout << *ii; 
+//  string s1;
 return 0;
 }
 
