@@ -12,6 +12,11 @@ T GetMax (T a,T b) {
     result = (a>b)? a : b;
     return (result);
 }
+template <class T>
+void test_for( T a)
+{
+    cout << a;
+}
 
 int main() {
 int i=5, j=6, k;
@@ -19,6 +24,8 @@ string l = "sonakshi";
 string m = "sonaksho",n;
 k = GetMax<int>(i,j);
 n = GetMax<string>(l,m);
+int y =1;
+test_for<int>(y);
 cout << k << endl;
 cout << n << endl;
 return 0;
